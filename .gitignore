@@ -1,2 +1,2 @@
-data/*
-notebooks/*
+notebooks/.ipynb_checkpoints
+notebooks/spark-warehouse

@@ -1,9 +1,8 @@
-config:
-	make schema && \
-	make connector
+up:
+	docker compose up
 
-schema:
-	bash ./scripts/create_schema.sh
+down:
+	docker compose down
 
-connector:
-	bash ./scripts/create_connector.sh
+produce:
+	benthos -c ./benthos.json.kafka.yaml
